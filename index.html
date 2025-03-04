@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form with the required information:</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name">
+
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email">
+
+                <label id="password-label" for="password">Age:</label>
+                <input id="password" type="number" name="password" placeholder="Create a password">
+            </fieldset>
+
+            <fieldset>
+                <label for="dropdown">Where did you hear about us?</label>
+                <select id="dropdown">
+                    <option selected disabled>Choose one</option>
+                    <option value="social">Social Media</option>
+                    <option value="friend">Friend</option>
+                    <option value="reddit">Reddit</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <p>Would you recommend us?</p>
+                <label for="recommend-yes">Yes:<input id="recommend-yes" class="inline" type="radio" name="recommend" value="yes" checked> </label>
+                <label for="recommend-no">No:<input id="recommend-no" class="inline" type="radio" name="recommend" value="no"></label>
+
+            </fieldset>
+        
+        </form>
+    </body>
+</html>
