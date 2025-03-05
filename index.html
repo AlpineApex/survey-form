@@ -10,13 +10,13 @@
         <p id="description">Please fill out this form with the required information:</p>
         <form id="survey-form">
             <fieldset>
-                <label id="name-label" for="name">Name:</label>
+                <label id="name-label" for="name">Enter your name:</label>
                 <input id="name" type="text" name="name" placeholder="Enter your name">
 
-                <label id="email-label" for="email">Email:</label>
+                <label id="email-label" for="email">Enter your email:</label>
                 <input id="email" type="email" name="email" placeholder="Enter your email">
 
-                <label id="password-label" for="password">Age:</label>
+                <label id="password-label" for="password">Create a password:</label>
                 <input id="password" type="number" name="password" placeholder="Create a password">
             </fieldset>
 
@@ -34,6 +34,22 @@
                 <label for="recommend-yes">Yes:<input id="recommend-yes" class="inline" type="radio" name="recommend" value="yes" checked> </label>
                 <label for="recommend-no">No:<input id="recommend-no" class="inline" type="radio" name="recommend" value="no"></label>
 
+                <p>What programming language's do you want to learn?</p>
+                <label for="javascript">Javascript:<input type="checkbox" id="javascript" value="javascript" name="language" class="inline"/></label>
+                <label for="c#">C#:<input type="checkbox" id="c#" value="c#" name="language" class="inline"/></label>
+                <label for="python">Python:<input type="checkbox" id="python" value="python" name="language" class="inline"/></label>
+                
+
+            </fieldset>
+
+            <fieldset>
+                <label for="profile-picture">Upload a profile picture: 
+                    <input id="profile-picture" type="file" name="file"/>
+                </label>
+
+                <label for="bio">Write a few sentences about you:
+                    <textarea id="bio" rows="3" cols="30" placeholder="My name is Jeff and I am interested in learning Javascript"></textarea>
+                </label>
             </fieldset>
         
         </form>
